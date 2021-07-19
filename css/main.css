@@ -34,8 +34,15 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .visually-hidden {
@@ -59,10 +66,28 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -485,24 +510,51 @@ img {
 }
 
 .advantages-list {
-  margin-left: calc(-1 * $card-set-gap);
   font-size: 14px;
   line-height: 1.71;
-  display: flex;
+  margin-bottom: -30p;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .advantages-list__item {
-  margin-left: 30px;
-  flex-basis: calc((100% / 4) - $card-set-gap);
+  width: inherit;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .advantages-list__box {
-  width: 270px;
+  width: inherit;
   height: 120px;
   border-radius: 4px;
-  padding: 25px 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  text-align: center;
+}
+
+.advantages-list__icon {
+  width: 70px;
+  height: 70px;
 }
 
 .advantages-list__title {
@@ -512,6 +564,18 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__title {
+    text-align: left;
+  }
+}
+
+.advantages-list.team-list__text {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .work {

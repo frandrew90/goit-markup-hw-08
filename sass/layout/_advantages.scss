@@ -3,23 +3,49 @@
 }
 
 .advantages-list {
-  margin-left: calc(-1 * $card-set-gap);
+  // margin-left: calc(-1 * $card-set-gap);
   font-size: 14px;
   line-height: 1.71;
-  display: flex;
+  margin-bottom: -30p;
+  // display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+  }
 
   &__item {
-    margin-left: $card-set-gap;
-    flex-basis: calc((100% / 4) - $card-set-gap);
+    width: inherit;
+    margin-bottom: $card-set-gap;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 2);
+      margin-left: $card-set-gap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 120px) / 4);
+    }
+
+    // flex-basis: calc((100% / 4) - $card-set-gap);
   }
 
   &__box {
-    width: 270px;
+    width: inherit;
     height: 120px;
     border-radius: 4px;
-    padding: 25px 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-bottom: 30px;
     background-color: $primary-bg-color;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
   }
 
   &__title {
@@ -29,5 +55,14 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &.team-list__text {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }

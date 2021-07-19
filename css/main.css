@@ -120,6 +120,15 @@ img {
 
 .social-list {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 206px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    width: auto;
+  }
 }
 
 .social-list__item {

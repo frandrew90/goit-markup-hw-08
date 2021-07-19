@@ -973,16 +973,19 @@ img {
 }
 
 .example-list {
-  margin-left: -30px;
   margin-bottom: -30px;
-  display: flex;
-  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .example-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .example-list__item {
-  margin-left: 30px;
-  margin-bottom: 30px;
-  flex-basis: calc((100% / 3) - 30px);
+  width: inherit;
   position: relative;
 }
 
@@ -1005,6 +1008,19 @@ img {
 
 .example-list__item:hover::after {
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .example-list__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .example-list__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .example-list__card-thumb {

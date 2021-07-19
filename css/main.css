@@ -579,8 +579,15 @@ img {
 }
 
 .work {
-  padding-top: 0;
-  text-align: center;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+    padding-top: 0;
+    text-align: center;
+  }
 }
 
 .work__title {

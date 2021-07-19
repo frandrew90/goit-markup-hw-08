@@ -3,11 +3,9 @@
 }
 
 .advantages-list {
-  // margin-left: calc(-1 * $card-set-gap);
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: -30p;
-  // display: flex;
 
   @media screen and (min-width: 768px) {
     display: flex;

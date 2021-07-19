@@ -40,10 +40,14 @@
   }
 
   &__text-wrapper {
-    padding: 30px 32px;
+    padding: 24px 32px;
     border-radius: 0 0 4px 4px;
     background-color: $header-bg-color;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      padding: 30px 32px;
+    }
   }
 
   &__text {

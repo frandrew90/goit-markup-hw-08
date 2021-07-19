@@ -1,0 +1,205 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity $transition-time $transition-time-func,
+    transform transition-time $transition-time-func;
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background: $secondary-accent-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: scale(1);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity $transition-time $transition-time-func,
+    transform $transition-time $transition-time-func;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    display: inline-block;
+    color: $title-text-color;
+  }
+
+  &__form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color $transition-time $transition-time-func,
+      fill $transition-time $transition-time-func;
+    &:focus,
+    &:hover {
+      border-color: $primary-accent-color;
+    }
+    &:focus + .modal__input-icon,
+    &:hover + .modal__input-icon {
+      fill: $primary-accent-color;
+    }
+    &__input-icon:hover ~ &,
+    &__input-icon:focus ~ & {
+      border-color: $primary-accent-color;
+    }
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      transition: color $transition-time $transition-time-func;
+    }
+  }
+
+  &__input-text {
+    margin-bottom: 4px;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+  }
+
+  &__form-field {
+    margin-bottom: 10px;
+  }
+
+  &__input-wrapper {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill $transition-time $transition-time-func;
+    &:hover,
+    &:focus {
+      fill: $primary-accent-color;
+    }
+  }
+
+  &__form-text {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 12px 16px;
+    resize: none;
+    cursor: pointer;
+    outline: none;
+    transition: border-color $transition-time $transition-time-func;
+    &:focus,
+    &:hover {
+      border-color: $primary-accent-color;
+    }
+    &:hover::placeholder,
+    &:focus::placeholder {
+      color: $primary-accent-color;
+    }
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      transition: color $transition-time $transition-time-func;
+    }
+  }
+
+  &__input-check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    display: flex;
+    align-items: center;
+  }
+
+  &__privacy-link {
+    color: $primary-accent-color;
+    display: block;
+  }
+
+  &__check-icon-wrapper {
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__check-icon {
+    fill: $secondary-accent-color;
+  }
+
+  &__input-check:checked + &__input-check-text &__check-icon-wrapper {
+    background-color: $primary-accent-color;
+    border: none;
+  }
+}
+
+.button--modal {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30px;
+  padding: 8px 53px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: transparent;
+  cursor: pointer;
+  &:hover .close-btn__icon {
+    fill: $primary-accent-color;
+  }
+
+  &__icon {
+    width: 11px;
+    height: 11px;
+    fill: #000000;
+    transition: fill $transition-time $transition-time-func;
+  }
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  opacity: 0;
+  transform: scale(0.5);
+}

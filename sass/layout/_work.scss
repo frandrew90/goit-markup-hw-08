@@ -1,0 +1,38 @@
+.work {
+  padding-top: 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.work-list {
+  margin-left: -30px;
+  display: flex;
+
+  &__item {
+    position: relative;
+    margin-left: 30px;
+    flex-basis: calc((100% / 3) - 30px);
+  }
+
+  &__text {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-accent-color;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

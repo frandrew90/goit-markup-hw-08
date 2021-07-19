@@ -1,0 +1,125 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.71;
+
+  &--theme--dark {
+    color: $secondary-accent-color;
+    background-color: $footer-bg-color;
+  }
+}
+
+.footer-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo--light-logo {
+  color: $secondary-accent-color;
+}
+
+.logo--footer-logo {
+  margin-bottom: 20px;
+}
+.footer-contacts__address {
+  margin-bottom: 9px;
+  font-style: normal;
+}
+
+.footer-contacts__link {
+  color: $footer-link-color;
+  transition: color $transition-time $transition-time-func;
+  &:focus,
+  &:hover {
+    color: $primary-accent-color;
+  }
+}
+
+.footer-contacts-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-links {
+  margin-left: 70px;
+}
+
+.social-list__icon--color--light {
+  fill: $secondary-accent-color;
+}
+
+.social-list__box--theme-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $transition-time $transition-time-func;
+}
+
+.footer-links__title {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.subscription {
+  margin-left: 93px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &-form {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.subscription-form__input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+}
+
+.button__footer-btn {
+  margin-left: 12px;
+  padding: 8px 27px 8px 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.button__icon {
+  max-width: 44px;
+  max-height: 44px;
+  display: block;
+  margin-left: 10px;
+  fill: $secondary-accent-color;
+}

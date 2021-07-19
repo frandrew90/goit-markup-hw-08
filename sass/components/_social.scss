@@ -2,9 +2,9 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 206px;
+  max-width: 206px;
   @media screen and (min-width: 1200px) {
-    width: auto;
+    max-width: auto;
   }
 
   &__item {

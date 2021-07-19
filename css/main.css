@@ -789,8 +789,8 @@ img {
 
 .clients-list__icon {
   align-self: center;
-  width: 106px;
-  width: 60px;
+  width: 100%;
+  width: 100%;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

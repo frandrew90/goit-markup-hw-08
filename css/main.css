@@ -709,13 +709,19 @@ img {
 }
 
 .mob-menu-contacts__link--large {
-  font-size: 34px;
   line-height: 1.18;
   color: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .mob-menu-contacts__link--large {
+    font-size: 34px;
+  }
+}
+
 .mob-menu-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-menu-social__link {

@@ -301,13 +301,17 @@
 }
 
 .mob-menu-contacts__link--large {
-  font-size: 34px;
+  // font-size: 34px;
   line-height: 1.18;
   color: $primary-accent-color;
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 }
 
 .mob-menu-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-menu-social__link {
@@ -323,6 +327,7 @@
   &:not(:last-child) {
     margin-right: 10px;
     display: flex;
+
     &::after {
       content: "";
       height: 100%;

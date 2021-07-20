@@ -1065,6 +1065,7 @@ img {
 
 .example-list__item {
   width: inherit;
+  margin-bottom: 30px;
   position: relative;
 }
 

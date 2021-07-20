@@ -548,8 +548,8 @@ img {
 @media screen and (min-width: 768px) {
   .header-contacts__icon--mail {
     display: block;
-    width: 14px;
-    height: 10px;
+    max-width: 14px;
+    max-height: 10px;
   }
 }
 

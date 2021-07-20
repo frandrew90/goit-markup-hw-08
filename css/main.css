@@ -326,6 +326,7 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 

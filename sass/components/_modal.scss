@@ -146,6 +146,7 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     @media screen and (min-width: 768px) {

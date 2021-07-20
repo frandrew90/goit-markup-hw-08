@@ -737,8 +737,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .clients-list {
-    margin-left: -30px;
-    margin-bottom: -30px;
     display: flex;
     flex-wrap: wrap;
   }

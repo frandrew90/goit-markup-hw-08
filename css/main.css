@@ -813,8 +813,22 @@ img {
 }
 
 .footer-info {
-  display: flex;
   align-items: baseline;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    justify-content: start;
+  }
 }
 
 .logo--light-logo {
@@ -825,9 +839,19 @@ img {
   margin-bottom: 20px;
 }
 
+.footer-contacts {
+  margin-bottom: 60px;
+}
+
 .footer-contacts__address {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts__address {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts__link {
@@ -840,11 +864,23 @@ img {
 }
 
 .footer-contacts-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-links {
-  margin-left: 70px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-links {
+    margin-left: 70px;
+  }
 }
 
 .social-list__icon--color--light {
@@ -866,8 +902,10 @@ img {
   text-transform: uppercase;
 }
 
-.subscription {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: 93px;
+  }
 }
 
 .subscription__title {
@@ -880,19 +918,32 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription__title {
+    text-align: left;
+  }
+}
+
 .subscription-box {
-  display: flex;
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-box {
+    position: relative;
+  }
+}
+
 .subscription-form {
-  display: flex;
   align-items: center;
 }
 
 .subscription-form__input {
-  display: block;
-  width: 358px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -913,11 +964,33 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .subscription-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    width: 358px;
+    margin-bottom: 0px;
+  }
+}
+
 .button__footer-btn {
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 8px 27px 8px 28px;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .button__footer-btn {
+    position: absolute;
+    bottom: 0;
+    right: -212px;
+  }
 }
 
 .button__icon {

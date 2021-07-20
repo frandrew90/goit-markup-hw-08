@@ -542,8 +542,15 @@ img {
 }
 
 .header-contacts__icon--mail {
-  width: 14px;
-  height: 10px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__icon--mail {
+    display: block;
+    width: 14px;
+    height: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -554,8 +561,15 @@ img {
 }
 
 .header-contacts__icon--phone {
-  width: 10px;
-  height: 14px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__icon--phone {
+    display: block;
+    width: 10px;
+    height: 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

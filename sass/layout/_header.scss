@@ -157,8 +157,13 @@
 }
 
 .header-contacts__icon--mail {
-  width: 14px;
-  height: 10px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 14px;
+    height: 10px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 16px;
@@ -167,8 +172,13 @@
 }
 
 .header-contacts__icon--phone {
-  width: 10px;
-  height: 14px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 10px;
+    height: 14px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 10px;

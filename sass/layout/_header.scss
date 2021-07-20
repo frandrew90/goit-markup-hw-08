@@ -210,6 +210,11 @@
   &__icon:hover {
     fill: $primary-accent-color;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    pointer-events: none;
+  }
 }
 
 .menu-close {

@@ -603,6 +603,13 @@ img {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+    pointer-events: none;
+  }
+}
+
 .menu-close {
   position: absolute;
   right: 35px;

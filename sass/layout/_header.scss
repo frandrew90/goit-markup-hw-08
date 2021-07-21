@@ -1,10 +1,20 @@
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 
   color: $title-text-color;
   background-color: $secondary-accent-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header-box {
@@ -189,8 +199,8 @@
 
 .menu-open {
   position: absolute;
-  right: 0px;
-  top: 19px;
+  right: 18px;
+  top: 3px;
   // width: 30px;
   // height: 30px;
 
@@ -220,8 +230,8 @@
 
 .menu-close {
   position: absolute;
-  right: 13px;
-  top: -15px;
+  right: 30px;
+  top: -34px;
   // width: 30px;
   // height: 30px;
 

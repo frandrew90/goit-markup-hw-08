@@ -404,11 +404,25 @@ img {
 }
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
   color: #212121;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header-box {
@@ -601,8 +615,8 @@ img {
 
 .menu-open {
   position: absolute;
-  right: 0px;
-  top: 19px;
+  right: 18px;
+  top: 3px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -632,8 +646,8 @@ img {
 
 .menu-close {
   position: absolute;
-  right: 13px;
-  top: -15px;
+  right: 30px;
+  top: -34px;
   border: none;
   background: transparent;
   cursor: pointer;

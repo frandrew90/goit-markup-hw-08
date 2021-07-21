@@ -189,7 +189,7 @@
 
 .menu-open {
   position: absolute;
-  right: 30px;
+  right: 0px;
   top: 19px;
   // width: 30px;
   // height: 30px;
@@ -202,8 +202,8 @@
   }
 
   &__icon {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     fill: $title-text-color;
     transition: fill $transition-time $transition-time-func;
   }
@@ -220,8 +220,8 @@
 
 .menu-close {
   position: absolute;
-  right: 35px;
-  top: -22px;
+  right: 13px;
+  top: -15px;
   // width: 30px;
   // height: 30px;
 
